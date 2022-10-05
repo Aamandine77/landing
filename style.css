@@ -38,13 +38,14 @@ p {
 .container {
   width: 800px;
   margin: auto;
+  text-align: center;
 }
 
 .banner {
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/background.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/abc.jpeg');
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
+  padding: 50px 0;
   text-align: center;
 }
 
@@ -59,7 +60,7 @@ p {
   font-size: 24px;
 }
 
-.button-blue {
+.button-write {
   background-color: #1A48E3;
   color: white;
   padding: 16px 48px;
@@ -69,19 +70,20 @@ p {
   transition: .3s;
 }
 
-.button-blue:hover {
+.button-write:hover {
   background-color: #0D1EC6;
-  color: white;
+  color: write;
 }
 
 .card-white {
   background: white;
   box-shadow: 0 0 16px rgba(0,0,0,0.1);
   border-radius: 4px;
-  width: 200px;
+  width: 350px;
+  height: 290px;
   text-align: center;
   padding: 24px;
-  margin: 8px;
+  margin: auto;
 }
 
 .card-white img {
@@ -96,13 +98,13 @@ p {
 }
 
 .footer {
-  background: #404042;
+  background: write;
   text-align: center;
   padding: 24px 0;
 }
 
 .footer p {
-  color: white;
+  color: darkred;
 }
 
 
@@ -111,3 +113,8 @@ p {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
 }
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
